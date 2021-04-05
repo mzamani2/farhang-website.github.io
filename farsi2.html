@@ -152,7 +152,7 @@
 									<h3>Is this level suitable for you?</h3>
 									<p>Can you read and understand the following Persian sentences?  If so, check out a <a href="farsi3.html">level higher</a></p>
 									<div id="quiz"></div>
-									<button id="submit" align="center">Submit Quiz</button>
+									<button id="submit">Submit Quiz</button>
 									<div id="results"></div>
 								</div>
 							</div>
@@ -231,7 +231,7 @@
 	          // ...add an HTML radio button
 	          answers.push(
 	            `<label>
-	              <input type="radio" name="question${questionNumber}" value="${letter}">
+	              <input type="radio" name="question${questionNumber}" value="${letter}" align="center">
 	              ${letter} :
 	              ${currentQuestion.answers[letter]}
 	            </label>`
