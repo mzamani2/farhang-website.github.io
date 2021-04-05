@@ -231,7 +231,7 @@
 	          // ...add an HTML radio button
 	          answers.push(
 	            `<label>
-	              <input type="radio" name="question${questionNumber}" value="${letter}" text-align = "right">
+	              <input type="radio" name="question${questionNumber}" value="${letter}">
 	              ${letter} :
 	              ${currentQuestion.answers[letter]}
 	            </label>`
@@ -240,8 +240,8 @@
 
 	        // add this question and its answers to the output
 	        output.push(
-	          `<div class="question"> ${currentQuestion.question} </div>
-	          <div class="answers"> ${answers.join('')} </div>`
+	          `<div class="question" align="right"> ${currentQuestion.question} </div>
+	          <div class="answers" align="right"> ${answers.join('')} </div>`
 	        );
 	      }
 	    );
