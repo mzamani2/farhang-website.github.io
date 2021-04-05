@@ -240,8 +240,8 @@
 
 	        // add this question and its answers to the output
 	        output.push(
-	          `<div class="question"> ${currentQuestion.question} </div>
-	          <div class="answers"> ${answers.join('')} </div>`
+	          `<div class="question" text-align = "right"> ${currentQuestion.question} </div>
+	          <div class="answers" text-align = "right"> ${answers.join('')} </div>`
 	        );
 	      }
 	    );
@@ -285,7 +285,7 @@
 	    resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
 	  }
 
-	  const quizContainer = document.getElementById('quiz');
+	  const quizContainer = document.getElementById('quiz').style.textAlign= "right";
 	  const resultsContainer = document.getElementById('results');
 	  const submitButton = document.getElementById('submit');
 	  const myQuestions = [
